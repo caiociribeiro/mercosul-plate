@@ -1,0 +1,63 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
+@font-face {
+    font-family: "FE-FONT";
+    src: url(fonts/FE-FONT.TTF);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, 
+body {
+    height: 80vh;
+    background-color: rgb(206, 217, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.plate {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.image {
+    z-index: 0;
+    position: absolute;
+    max-width: 540px;
+}
+
+.input {
+    position: relative;
+    font-family: 'FE-FONT', sans-serif;
+    z-index: 1;
+    font-size: 5em;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 2.7rem;
+    background: transparent;
+    border: none;
+}
+
+.input::placeholder {
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.output {
+    margin: 0 auto;
+    max-width: 540px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
