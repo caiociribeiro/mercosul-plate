@@ -1,63 +1,68 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
-@font-face {
-    font-family: "FE-FONT";
-    src: url(fonts/FE-FONT.TTF);
-}
+@import url("https://fonts.cdnfonts.com/css/fe-font");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-html, 
-body {
-    height: 80vh;
-    background-color: rgb(206, 217, 219);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.container {
+  height: 50vh;
+  width: 100vw;
 }
 
 .plate {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  max-width: 540px;
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
 
 .image {
-    z-index: 0;
-    position: absolute;
-    max-width: 540px;
+  z-index: 0;
+  width: 100%;
 }
 
 .input {
-    position: relative;
-    font-family: 'FE-FONT', sans-serif;
-    z-index: 1;
-    font-size: 5em;
-    letter-spacing: 6px;
-    text-align: center;
-    margin-top: 2.7rem;
-    background: transparent;
-    border: none;
+  /* font-family: "FE-font", sans-serif; */
+  max-width: 100%;
+  font-size: 6em;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
 }
 
 .input::placeholder {
-    font-size: 15px;
+  font-size: 2rem;
 }
 
 .input:focus {
-    outline: none;
+  outline: none;
 }
 
 .output {
-    margin: 0 auto;
-    max-width: 540px;
-    text-align: center;
-    color: black;
-    font-size: 30px;
+  margin: 2rem auto 0 auto;
+  max-width: 540px;
+  text-align: center;
+  color: black;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
